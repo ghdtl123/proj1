@@ -29,7 +29,8 @@ button{outline:0;border: none;background: none;}
 .normal{font-weight: normal;}
 
 /*q_menu*/
-#wrap #q_menu{z-index: 120;position: fixed;top: 0;right: 0;}
+#wrap #q_menu{z-index: 120;position: fixed;top: 300px;right: 0;
+              display: none;}
 #wrap #q_menu li{width: 120px;height: 120px;}
 
 /*nav_pop*/

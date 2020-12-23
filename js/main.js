@@ -33,4 +33,13 @@ $(document).ready(function(){
             find_img.attr('src',scr_off);
         })//hover end
     })//last_box a .each end
+    $(window).scroll(function(){
+        if($(document).scrollTop() >= 900 && $(document).scrollTop() 
+           <= $('#footer').offset().top - 900){
+            $('#q_menu').fadeIn(200);
+        }
+        else{
+            $('#q_menu').fadeOut(200);
+        }
+    })
 })
