@@ -1,0 +1,166 @@
+/* Slider */
+.slick-slider
+{
+    position: relative;
+
+    display: block;
+    box-sizing: border-box;
+
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list
+{
+    position: relative;
+
+    display: block;
+    overflow: hidden;
+
+    margin: 0;
+    padding: 0;
+}
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.slick-track:before,
+.slick-track:after
+{
+    display: table;
+
+    content: '';
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
+}
+
+.slick-slide
+{
+    display: none;
+    float: left;
+
+    height: 100%;
+    min-height: 1px;
+}
+[dir='rtl'] .slick-slide
+{
+    float: right;
+}
+.slick-slide img
+{
+    display: block;
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{
+    display: block;
+}
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+    display: block;
+
+    height: auto;
+
+    border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}
+
+/*hj*/
+#sec1{clear: both;}
+#sec1.lazyslider img{width: 100%; min-width: 1024px;}
+#sec1 .slick-arrow{position:absolute;top:50%;z-index:9999;
+                   width: 100px;height: 100px;
+                   text-indent: -99999999px;
+                   opacity: 0.2;}
+#sec1 .slick-arrow:hover{opacity: 1;cursor: pointer;}                   
+#sec1 .slick-prev{left:150px;
+                  background: url(../images/leftarowbnt.png)center no-repeat;}
+#sec1 .slick-next{right:150px;
+                  background: url(../images/rightarowbnt.png)center no-repeat;}
+
+
+#sec1 .slick-dots {position: absolute; bottom: 30px;right: 100px;}
+#sec1 .slick-dots li{display:inline-block;
+                     padding-left: 10px;}
+#sec1 .slick-dots li button{width: 30px;
+                            height: 30px;
+                            background-color: #ccc;
+                            border-radius: 50%;
+                            opacity: 0.5;
+                            text-indent: -9999999px;}
+#sec1 .slick-dots li.slick-active button{width: 40px;
+                                         background-color:#EC9C0A;
+                                         border: 5px solid#EC9C0A;
+                                         border-radius: 20px;
+                                         opacity: 1;}
+
+#sec5 .regular{width: 845px;}
+#sec5 .slick-arrow{position: absolute;top: -50px;right: 820px;
+                   width: 27px; height: 27px;
+                   z-index: 99999;
+                   text-indent: -999999px;}
+#sec5 .slick-arrow:hover{cursor: pointer;}
+#sec5 .slick-prev{background: url(../images/sl_icon.png)center no-repeat;}
+#sec5 .slick-next{left: 50px; background: url(../images/sr_icon.png)center no-repeat;}
+
+#sec7 .inner{position: relative;}
+#sec7 .slick-arrow{position: absolute; top: 50%;
+                   width: 27px; height: 27px;
+                   z-index: 99999;
+                   text-indent: -999999px;}
+#sec7 .slick-arrow:hover{cursor: pointer;}
+#sec7 .slick-prev{left: -60px; background: url(../images/sl_icon.png)center no-repeat;}
+#sec7 .slick-next{right: -20px; background: url(../images/sr_icon.png)center no-repeat;}
