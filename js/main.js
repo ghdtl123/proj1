@@ -16,5 +16,21 @@ $(document).ready(function(){
                 $('.pr_slide .pr_txt > li:last-child').css({'margin-left':'0'});
             });
         },2000);//인기검색어 슬라이드
-   
+    $('#s_bnt').click(function(){
+        $('#nav_pop').slideDown();
+    });//사이트맵 다운
+    $('.nav_close').click(function(){
+        $('#nav_pop').slideUp();
+    });//사이트맵 업
+    $('.vod_box').each(function(){
+        var find_img = $(this).find('img');
+        var scr_off = find_img.attr('src');
+        var scr_on = scr_off.replace('off','on');
+
+        $(this).hover(function(){
+            find_img.attr('src',scr_on);
+        },function(){
+            find_img.attr('src',scr_off);
+        })//hover end
+    })//last_box a .each end
 })
