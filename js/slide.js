@@ -1,17 +1,11 @@
-$(document).ready(function(){
+$(function(){
     $(".lazy").slick({
         lazyLoad: 'ondemand', // ondemand progressive anticipated
-        infinite: true,
-        dots:true
+        infinite: true
       });
-    $("#sec5 .regular").slick({
-        infinite: true,
-        slidesToShow: 2,
-        slidesToScroll: 1
-      });
-    $("#sec7 .regular").slick({
-        infinite: true,
-        slidesToShow: 3,
+    $(".vertical").slick({
+        vertical: true,
+        slidesToShow: 4,
         slidesToScroll: 1
       });
 })
