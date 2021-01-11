@@ -1,16 +1,17 @@
 $(function(){
+   $(window).scroll(function(){
+     if ($(document).scrollTop() >= 230){
+      $('#headtop').slideDown();
+     }else{
+      $('#headtop').slideUp();
+     }
+    })//headtop
     $('#header').hover(function(){
         $('#nav_back,.depth2').stop().fadeIn();
     },function(){
         $('#nav_back,.depth2').stop().fadeOut();
     })//nav end
-    $(window).scroll(function(){
-        if ($(document).scrollTop() >= 300){
-          $('#header').css('height','50','background'-'color','#e31d2e');
-        }else{
-          $('#header').css('height','90');
-        }
-       })
+    
     var sta = 1;//상태 1
        $('#header #nav_back1 button').click(function(){
          if(sta == 1){
@@ -24,6 +25,17 @@ $(function(){
           sta = 1;//상태 1로 돌아가라  
          }
        })//loca end
+       $(window).scroll(function(){
+        if($(document).scrollTop() >= 300){
+            $('#sec2 .fontimg1').animate({'margin-left': '420px', opacity: '1'},1500);
+            $('#sec2 .fontimg2').animate({'margin-left': '455px', opacity: '1'},1500);
+        }
+       })//#sec2 fontimg
+       $(window).scroll(function(){
+        if($(document).scrollTop() >= 400){
+            $('#sec2 .logoimg1').fadeIn(3000);
+        }
+       })
        var href = $('#sec2 .vertical a.on').attr('href');
        $(href).show();//on클래스 항상 보이게
        

@@ -20,7 +20,28 @@ button{outline:0; border: none;background: none;}
 .sound_only{display: block; text-indent: -99999999999999px; height: 0;}
 
 /*header*/
-#header{position: fixed; width: 100%;height: 90px;
+#headtop{background-color: #e31d2e;
+         position: fixed;z-index: 200;
+         width: 100%; height: 60px;
+         display: none;}
+#headtop #headtop_logo{float: left;
+                       width: 50px; height: 50px;
+                       padding-top: 5px;}
+#headtop #headtop_logo img{width: 100%;}
+#headtop #headtop_input{padding:3px 3px;
+                        margin-top: 13px;
+                        margin-left: 10px;}
+#headtop #headtop_btn{}
+#headtop #headtop_btn:after{content: ''; display: block;
+                            width: 30px; height: 30px;
+                            background: url(../images/suche_icon.png);
+                            transform: translate(3px,14px);}
+#headtop ul{float: right;}
+#headtop ul li{float: left;font-size: 1.2rem;
+               color: #fff;
+               padding: 15px 40px;}
+#headtop ul li:hover{color: yellow;}
+#header{position: absolute; width: 100%;height: 90px;
         background-color:transparent;
         z-index: 100;
         transition: 0.5s;}

@@ -13,8 +13,10 @@
 /*sec2*/
 #sec2 {margin-bottom: 150px;position: relative;}
 #sec2 .fontimg1, .fontimg2 img{width: 100%;}
-#sec2 .fontimg1{position: absolute;top: -130px;left: 0px;}
-#sec2 .fontimg2{position:absolute;top: -40px;left: 35px;}
+#sec2 .fontimg1{position: absolute;top: -130px;left: -420px;
+                opacity: 0;}
+#sec2 .fontimg2{position:absolute;top: -40px;left: -420px;
+                opacity: 0;}
 #sec2 .inner{position: relative;}
 #sec2 .popup{width: 650px; height: 450px;
              position: absolute;top: 40px;right: 150px;
@@ -39,7 +41,8 @@
                  margin-top: 5px;}
 #sec2 .blandmore:hover{color: #fff;
                        background-color: #e31d2e;}
-#sec2 .logoimg1{position: absolute; top:450px;right: 0;}
+#sec2 .logoimg1{position: absolute; top:450px;right: 0;
+                display: none;}
 
 /*sec3*/
 #sec3 .inner > div{float: left;
